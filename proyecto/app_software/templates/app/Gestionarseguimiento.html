@@ -1,0 +1,303 @@
+{% load static %}
+
+
+<!doctype html>
+
+<html lang="es">
+
+<head>
+        <title>Gestionar seguimientos</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="estilo.css" rel="stylesheet" type="text/css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="scripts/alerta.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+                .sizecontacticon {
+                font-size: 50px; 
+                border: solid #f2f2f2;
+    
+        }
+        
+        </style>
+</head>
+
+<body>
+        <div class="container-fluid">
+                <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="container-fluid">
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+                                        style="border-bottom: 2px solid #2E92F0;">
+                                        <a class="navbar-brand">
+                                            <a title="Logo" href="index(cuenta registrada).html"><img src="{%static 'app_software/img/logo.jpg'%}" alt="Logo" height="70px"
+                                                    width="90px" /></a>
+                                        </a>
+                                        <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="menu">
+                                            <ul class="navbar-nav mr-auto">
+            
+                                            </ul>
+                                            <div style="padding-right: 500px;">
+                                                <form class="form-inline">
+                                                    <input class="form-control mr-sm-2"
+                                                        style="width: 250px; border-color: #2E92F0;">
+                                                    <a href="busqueda_producto.html">
+                                                        <button style="width: 100px;" type="button" class="btn btn-outline-info">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </a>
+                                                </form>
+                                            </div>
+            
+                                            <button type="button" class="btn nav-item dropdown active">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable"
+                                                    ><i class="fa fa-user mr-sm-2"></i>Cuenta</a>
+                                                <div class="dropdown-menu" style="border: solid #2E92F0;">
+                                                    <a class="dropdown-item" href="cuenta_detalles.html">Detalles de la cuenta</a>
+            
+                                                    <a class="dropdown-item" href="cuenta_pedidos.html">Pedidos</a>
+                                                    <a class="dropdown-item" href="cuenta_direcciones.html">Direcciones</a>
+            
+                                                </div>
+                                            </button>
+                                            </li>
+                                            <div>
+            
+                                                <button type="button" class="btn btn-outline-info">
+                                                    <a href="carro_de_compras.html"><i class="fa fa-shopping-cart mr-sm-2"></i>Carro</a>
+            
+                                                </button>
+            
+                                            </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container-fluid">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+            
+                                    <div>
+                                        <ul class="navbar-nav mr-auto">
+                                            <li class="nav-item dropdown active">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable"
+                                                    href="#">Categorias</a>
+                                                <div class="dropdown-menu" style="border: solid #2E92F0;">
+                                                    <a class="dropdown-item" href="categoria(motherboard).html">Motherboard</a>
+                                                    <a class="dropdown-item" href="categoria(procesadores).html">Procesadores</a>
+                                                    <a class="dropdown-item" href="categoria(ram).html">Ram</a>
+                                                    <a class="dropdown-item" href="categoria(fuentes de poder).html">Fuentes de
+                                                        poder</a>
+                                                    <a class="dropdown-item" href="categoria(tarjetas graficas).html">Tarjetas
+                                                        Graficas</a>
+                                                    <a class="dropdown-item" href="categoria(gabinetes).html">Gabinetes</a>
+                                                </div>
+                                            </li>
+            
+                                            <li class="nav-item active navitem2navbar">
+                                                <a href="informativo.html" class="nav-link">Informativo</a>
+                                            </li>
+                                            <li class="nav-item active navitem2navbar">
+                                                <a href="cotizacion.html" class="nav-link">Cotizacion</a>
+                                            </li>
+            
+                                        </ul>
+            
+            
+            
+                                    </div>
+                                </nav>
+                            </div>
+            
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    {% block contenido %}
+
+
+    <div class="container-fluid " >
+        <h6>Gestionar Seguimientos</h6>
+        <br>
+        <br>
+        <br>
+
+        <table class="table table-stripped">
+            <thead>
+                <tr>
+                    <th>id seguimiento</th>
+                    <th>id producto</th>
+                    <th>id usuario</th>
+                    <th>origen</th>
+                    <th>destino</th>
+                    <th>stock</th>
+                    <th>estado de envio</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                {% for seg in lista %}
+                    <tr>
+                        <td scope="row">{{seg.idseguimiento}}</td>
+                        <td>{{seg.idseguimiento}}</td>
+                        <td>{{seg.idproducto}}</td>
+                        <td>{{seg.origen}}</td>
+                        <td>{{seg.destino}}</td>
+                        <td>{{seg.idusuario}}</td>
+                        <td>{{seg.idproducto}}</td>
+                        <td>{{seg.estado_envio}}</td>
+
+
+                        <td>
+                            <a name="" id="" class="btn btn-warning text-white" href="{% url 'modificarseguimiento' seg.idseguimiento %}" role="button">Modificar</a>
+
+                        </td>
+                        <td>
+                            <a name="" id="" class="btn btn-danger text-white" href="{% url 'eliminarseguimiento' seg.idseguimiento %}" role="button">Eliminar</a>
+
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+     
+      </div>
+      {% endblock contenido %}
+
+</div>
+
+</div>
+<br>
+
+<div class="row">
+<div class="col-sm-12 p-5 text-center ">
+    <a href="{% url 'vadmin' %}" class="btn btn-secondary">Volver </a>.
+    <br>
+</div>  
+
+</div>
+
+
+
+
+        <div class="container-fluid">
+            <div class="row" style="border-top: solid #2E92F0; background-color: #f2f2f2;">
+                <div class="col-sm-4 paddingsobrenosotros">
+                    <div class="text-center">
+                        <div class="subrayado">
+                        <h5>Sobre nosotros</h5>
+                        </div>
+                        <img src="{%static 'app_software/img/logo.jpg'%}" alt="Logo" height="70px" width="90px" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit odit
+                            dolorem reprehenderit provident doloremque quidem cumque! Veritatis
+                            pariatur sit</p>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+    
+                        </button>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+    
+                        </button>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+    
+                        </button>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="col-sm-4 paddingsobrenosotros">
+                    <div class="subrayado">
+                    <h5 class="text-center">Servicios/Nosotros </h5>
+                    </div>
+                    <nav style="padding-top: 50px;">
+                        <ul>
+                                <li>
+                                    <a class="services" href="acerca_de_nosotros.html">Acerca de nosotros</a>
+                                </li>
+                                <li>
+                                    <a class="services" href="politicas_de_privacidad.html">Politicas de privacidad</a>
+                                </li>
+                                <li>
+                                    <a class="services" href="despachos.html">Despachos</a>
+                                </li>
+                                <li>
+                                    <a class="services" href="devoluciones.html">Devoluciones</a>
+                                </li>
+                            </ul>
+                    </nav>
+    
+    
+                </div>
+                <div class="col-sm-4 paddingsobrenosotros" >
+                    <div class="subrayado">
+                    <h5 class="text-center">Metodos de pago</h5>
+                    </div>
+                    <div class="text-center" style="padding-top: 0px; ">
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-paypal"></i></a>
+    
+                        </button>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-cc-mastercard"></i></a>
+    
+                        </button>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-cc-visa"></i></a>
+    
+                        </button>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+ <script> 
+ document.getElementById("boton1").innerHTML = mensaje;
+ document.getElementById("boton2").innerHTML = mensaje;
+ document.getElementById("boton3").innerHTML = mensaje;
+ document.getElementById("boton4").innerHTML = mensaje;
+ document.getElementById("boton5").innerHTML = mensaje;
+ document.getElementById("boton6").innerHTML = mensaje;
+ document.getElementById("boton7").innerHTML = mensaje;
+ document.getElementById("boton8").innerHTML = mensaje;
+ document.getElementById("boton9").innerHTML = mensaje;
+ document.getElementById("boton10").innerHTML = mensaje;
+ document.getElementById("boton11").innerHTML = mensaje;
+ document.getElementById("boton12").innerHTML = mensaje;
+ document.getElementById("boton13").innerHTML = mensaje;
+ document.getElementById("boton14").innerHTML = mensaje;
+ document.getElementById("boton15").innerHTML = mensaje;
+ document.getElementById("boton16").innerHTML = mensaje;
+
+
+
+</script>
+
+</body>

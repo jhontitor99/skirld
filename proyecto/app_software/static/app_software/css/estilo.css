@@ -1,0 +1,125 @@
+.navitem2navbar {
+    border-bottom: solid #2E92F0;
+    padding: 0px 30px;
+    margin: 5px;
+}
+.services{
+    border-bottom: double #2E92F0; 
+    color: rgb(0, 0, 0);
+    
+}
+
+.subrayado{
+    border: dashed #2E92F0;
+    
+    
+}
+.paddingsobrenosotros{
+    padding-top: 10px;
+}
+
+.cardproductos{
+    height: 200px;
+    object-fit: cover;
+}
+
+.left { 
+    padding-top: 10px;
+    margin-left: 0px;
+    float: left;
+    position: relative;
+    height: auto;
+}
+
+.right {
+    padding-top: 10px;  
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+td{
+    text-align: center;
+}
+
+.subrayadotitulos{
+    border-bottom: solid #2E92F0;
+    color: #2E92F0;
+}
+
+.color{
+    color: #2E92F0;
+
+
+}
+.button {
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 6px 4px;
+    cursor: pointer;
+
+}
+
+.errores{
+    background: red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -80px;
+    margin-left: 340px;
+    padding: 10px;
+    position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+
+
+    table {
+        width:100%;
+        
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+

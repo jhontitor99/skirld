@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Carro compra</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="Scripts/estilo.css" rel="stylesheet" type="text/css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .sizecontacticon {
+            font-size: 50px;
+            border: solid #f2f2f2;
+
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light"
+                            style="border-bottom: 2px solid #2E92F0;">
+                            <a class="navbar-brand">
+                                <a title="Logo" href="index(cuenta registrada).html"><img src="img/logo.PNG" alt="Logo"
+                                        height="70px" width="90px" /></a>
+                            </a>
+                            <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="menu">
+                                <ul class="navbar-nav mr-auto">
+
+                                </ul>
+                                <div style="padding-right: 500px;">
+                                    <form class="form-inline">
+                                        <input class="form-control mr-sm-2"
+                                            style="width: 280px; border-color: #2E92F0;">
+                                        <button style="width: 100px;" type="button" class="btn btn-outline-info">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <button type="button" class="btn nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable"
+                                        href="#"><i class="fa fa-user mr-sm-2"></i>Cuenta</a>
+                                    <div class="dropdown-menu" style="border: solid #2E92F0;">
+                                        <a class="dropdown-item" href="cuenta_detalles.html">Detalles de la cuenta</a>
+
+                                        <a class="dropdown-item" href="cuenta_pedidos.html">Pedidos</a>
+                                        <a class="dropdown-item" href="cuenta_direcciones.html">Direcciones</a>
+
+                                    </div>
+                                </button>
+                                </li>
+                                <div>
+
+                                    <button type="button" class="btn btn-outline-info">
+                                        <a href="carro_de_compras.html"><i
+                                                class="fa fa-shopping-cart mr-sm-2"></i>Carro</a>
+
+                                    </button>
+
+                                </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+                        <div>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable"
+                                        href="#">Categorias</a>
+                                        <div class="dropdown-menu" style="border: solid #2E92F0;">
+                                            <a class="dropdown-item" href="categoria(motherboard).html">Motherboard</a>
+                                            <a class="dropdown-item" href="categoria(procesadores).html">Procesadores</a>
+                                            <a class="dropdown-item" href="categoria(ram).html">Ram</a>
+                                            <a class="dropdown-item" href="categoria(fuentes de poder).html">Fuentes de
+                                                poder</a>
+                                            <a class="dropdown-item" href="categoria(tarjetas graficas).html">Tarjetas
+                                                Graficas</a>
+                                            <a class="dropdown-item" href="categoria(gabinetes).html">Gabinetes</a>
+                                        </div>
+                                </li>
+
+                                <li class="nav-item active navitem2navbar">
+                                    <a href="informativo.html" class="nav-link">Informativo</a>
+                                </li>
+                                <li class="nav-item active navitem2navbar">
+                                    <a href="cotizacion.html" class="nav-link">Cotizacion</a>
+                                </li>
+
+                            </ul>
+
+
+
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid subrayadotitulos" style=" padding-top: 50px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>Carro de Compra</h1>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div style="padding-top: 20px;">
+                        <table>
+
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col"></th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>MSI Z370 godlike Gaming SLI Extended</td>
+                        <td>01</td>
+                        <td>$99.990</td>
+                        <td class="text-center"><i class="fa fa-remove"></i></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Procesador Intel® Core™ i9-9900K, 8-Core 4.5 GHz</td>
+                        <td>01</td>
+                        <td>$380.990</td>
+                        <td class="text-center"><i class="fa fa-remove"></i></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Tarjeta de video RTX 3060 Republic of Gamer</td>
+                        <td>01</td>
+                        <td>$990.990</td>
+                        <td class="text-center"><i class="fa fa-remove"></i></td>
+
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <td class="text-center"><b>SUBTOTAL</b></td>
+                        <td><b>03</b></td>
+                        <td><b>$1.471.970</b></td>
+                        <th></th>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div>
+                        <form class="needs-validation" novalidate>
+                            <h3>Opciones de pago</h3>
+
+                            <div class="custom-control custom-radio">
+                                <input type="radio" class="custom-control-input" id="customControlValidation2"
+                                    name="pago" value="Transferencia" required>
+                                <label class="custom-control-label" for="customControlValidation2">Transferencia</label>
+                            </div>
+                            <div class="custom-control custom-radio mb-3">
+                                <input type="radio" class="custom-control-input" id="customControlValidation3"
+                                    name="pago" value="WebPay" required>
+                                <label class="custom-control-label" for="customControlValidation3">WebPay</label>
+                            </div>
+                            <div id="mensaje1" class="errores">Seleccione un metodo de pago</div>
+
+                            <h3>Dirección envío</h3>
+                            <div class="form-group">
+                                <select class="custom-select" required id="direc">
+                                    <option value="">Seleccionar dirección</option>
+                                    <option value="Casa">Casa</option>
+                                    <option value="Casa tía">Casa tía</option>
+                                </select>
+                                <div id="mensaje2" class="errores">Seleccione una direccion</div>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="validationTextarea">Observaciones en el despacho (Opcional):</label>
+                                <input type="text" class="form-control " id="observacion" placeholder="">
+                            </div>
+                                                        
+                                <button id="btn" type="submit" href="#" class="btn btn-success ml-3 rounded"
+                                    data-toggle="" data-target="">Comprar</button>
+                            
+
+
+                        </form>
+                        <script>
+                            // Example starter JavaScript for disabling form submissions if there are invalid fields
+                            (function () {
+                                'use strict';
+
+                                window.addEventListener('load', function () {
+
+                                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                    var forms = document.getElementsByClassName('needs-validation');
+
+                                    // Loop over them and prevent submission
+                                    var validation = Array.prototype.filter.call(forms, function (form) {
+
+                                        form.addEventListener('submit', function (event) {
+
+                                            if (form.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+
+                                        }, false);
+                                    });
+                                }, false);
+                            })();
+                        </script>
+
+                        <script>
+                            $(document).ready(function () {
+                                $("#btn").click(function () {
+                                    var pago = $("input:radio[name=pago]:checked").val();
+                                    var direccion = $("#direc option:selected").val();
+                                    var obs = $("#observacion").val();
+
+                                    
+
+                                    if (pago == undefined || direccion == "") {
+                                        
+                                    } else {                             
+                                        $("#btn").attr({ "data-toggle": "modal" });
+                                        $("#btn").attr({ "data-target": "#modal1" });
+                                        $("#btn").attr({ "type": "button" });
+
+                                        $("#oppago").text(pago);
+                                        $("#opdirec").text(direccion);
+                                        $("#obs").text(obs);
+
+
+                                    }
+                                });
+
+
+                            });
+                        </script>
+
+                        <!--Modal -->
+                        <div class="modal fade" id="modal1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="model-title text-center subrayadotitulos">
+                                        <h4><b>RESUMEN</b></h4>
+                                    </div>
+
+
+                                    <div class="model-body">
+                                        <div class="container mb-5" >
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                <img src="img/Productos/producto1.png" width="100%" alt="">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                    <h4>Cantidad</h4>
+                                                    <p>1</p>
+                                                </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                    <h4>Precio</h4>
+                                                    <p>$99.990</p>
+                                                </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="container mb-5">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                <img src="img/cpu.jpg" width="100%" alt="">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                    <h4>Cantidad</h4>
+                                                    <p>1</p>
+                                                </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                    <h4>Precio</h4>
+                                                    <p>$380.990</p>
+                                                </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="container mb-5">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                <img src="img/grafica.jpg" width="100%" alt="">
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                    <h4>Cantidad</h4>
+                                                    <p>1</p>
+                                                </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="text-center">
+                                                    <h4>Precio</h4>
+                                                    <p>$990.990</p>
+                                                </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        
+                                        <div class="container-fluid mb-5">
+                                        <div style="float: left;"><h6 >Opcion de pago</h6></div>
+                                        <div class="text-right"><h6 id="oppago">...</h6></div>
+                                        <div style="float: left;"><h6 >Direccion</h6></div>
+                                        <div class="text-right"><h6 id="opdirec">...</h6></div>
+                                        <div style="float: left;"><h6 >Observacion:</h6></div>
+                                        <br>
+                                        <div style="float: left;" id="obs"><h6 >...</h6></div>
+                                        </div>
+
+                                        <div class="container-fluid">
+                                            <div class="row" style="border-bottom:solid #2E92F0;">
+                                                <div class="col-sm-12">                                                    
+                                                    <div style="float: left;">Fecha</div>
+                                                    <div class="text-right">21-04-2021</div>
+                                                    <div style="float: left;">Cantidad</div>
+                                                    <div class="text-right">3</div>
+                                                    <div style="float: left;">Subtotal</div>
+                                                    <div class="text-right">$1.471.970</div>   
+                                                    <div style="float: left;">Despacho</div>
+                                                    <div class="text-right">$9.990</div>
+                                                </div>
+                                                
+                                                
+                                                
+                                            </div>
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <b>                                                        
+                                                        <h4 style="float: left;">TOTAL</h4>
+                                                        <h4 class="text-right">$1.481.960</h4>
+                                                        </b>
+                                                    </div>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <a href="carro_de_compras.html">
+                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                        </form>
+                        <footer style="padding: 50px">
+
+                        </footer>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="container-fluid">
+            <div class="row" style="border-top: solid #2E92F0; background-color: #f2f2f2;">
+                <div class="col-sm-4 paddingsobrenosotros">
+                    <div class="text-center">
+                        <div class="subrayado">
+                            <h5>Sobre nosotros</h5>
+                        </div>
+                        <img src="img/logo.PNG" alt="Logo" height="70px" width="90px" />
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit odit
+                            dolorem reprehenderit provident doloremque quidem cumque! Veritatis
+                            pariatur sit</p>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+
+                        </button>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+
+                        </button>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 paddingsobrenosotros">
+                    <div class="subrayado">
+                        <h5 class="text-center">Servicios/Nosotros </h5>
+                    </div>
+                    <nav style="padding-top: 50px;">
+                        <ul>
+                            <li>
+                                <a class="services" href="acerca_de_nosotros.html">Acerca de nosotros</a>
+                            </li>
+                            <li>
+                                <a class="services" href="politicas_de_privacidad.html">Politicas de privacidad</a>
+                            </li>
+                            <li>
+                                <a class="services" href="despachos.html">Despachos</a>
+                            </li>
+                            <li>
+                                <a class="services" href="devoluciones.html">Devoluciones</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+                </div>
+                <div class="col-sm-4 paddingsobrenosotros">
+                    <div class="subrayado">
+                        <h5 class="text-center">Metodos de pago</h5>
+                    </div>
+                    <div class="text-center" style="padding-top: 0px; ">
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-paypal"></i></a>
+
+                        </button>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-cc-mastercard"></i></a>
+
+                        </button>
+                        <button type="button" class="btn btn-outline-info sizecontacticon">
+                            <a href="#"><i class="fa fa-cc-visa"></i></a>
+
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>

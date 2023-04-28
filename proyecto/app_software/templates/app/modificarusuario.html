@@ -1,0 +1,289 @@
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+
+<!doctype html>
+<html lang="es">
+
+    <head>
+       
+        <title>Sitio con Django</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="{% static 'app_ora/js/jquery-3.6.0.min.js' %}"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="{% static 'app_ora/css/miestilo.css' %}"
+    
+        <link rel="stylesheet" href="{% static 'app_software/css/miestilo.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      
+    
+    </head>
+<body>
+    
+
+
+        <div class="container-fluid">
+                <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="container-fluid">
+                                    <nav class="navbar navbar-expand-lg navbar-light bg-light"
+                                        style="border-bottom: 2px solid #2E92F0;">
+                                        <a class="navbar-brand">
+                                            <a title="Logo" href="index(cuenta registrada).html"><img src="{%static 'app_software/img/logo.jpg'%}" alt="Logo" height="70px"
+                                                    width="90px" /></a>
+                                        </a>
+                                        <button class="navbar-toggler" data-target="#menu" data-toggle="collapse" type="button">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="menu">
+                                            <ul class="navbar-nav mr-auto">
+            
+                                            </ul>
+                                            <div style="padding-right: 500px;">
+                                                <form class="form-inline">
+                                                    <input class="form-control mr-sm-2"
+                                                        style="width: 250px; border-color: #2E92F0;">
+                                                    <a href="busqueda_producto.html">
+                                                        <button style="width: 100px;" type="button" class="btn btn-outline-info">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </a>
+                                                </form>
+                                            </div>
+            
+                                            <button type="button" class="btn nav-item dropdown active">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable"
+                                                    ><i class="fa fa-user mr-sm-2"></i>Cuenta</a>
+                                                <div class="dropdown-menu" style="border: solid #2E92F0;">
+                                                    <a class="dropdown-item" href="cuenta_detalles.html">Detalles de la cuenta</a>
+            
+                                                    <a class="dropdown-item" href="cuenta_pedidos.html">Pedidos</a>
+                                                    <a class="dropdown-item" href="cuenta_direcciones.html">Direcciones</a>
+            
+                                                </div>
+                                            </button>
+                                            </li>
+                                            <div>
+            
+                                                <button type="button" class="btn btn-outline-info">
+                                                    <a href="carro_de_compras.html"><i class="fa fa-shopping-cart mr-sm-2"></i>Carro</a>
+            
+                                                </button>
+            
+                                            </div>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="container-fluid">
+                                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            
+            
+                                    <div>
+                                        <ul class="navbar-nav mr-auto">
+                                            <li class="nav-item dropdown active">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable"
+                                                    href="#">Categorias</a>
+                                                <div class="dropdown-menu" style="border: solid #2E92F0;">
+                                                    <a class="dropdown-item" href="categoria(motherboard).html">Motherboard</a>
+                                                    <a class="dropdown-item" href="categoria(procesadores).html">Procesadores</a>
+                                                    <a class="dropdown-item" href="categoria(ram).html">Ram</a>
+                                                    <a class="dropdown-item" href="categoria(fuentes de poder).html">Fuentes de
+                                                        poder</a>
+                                                    <a class="dropdown-item" href="categoria(tarjetas graficas).html">Tarjetas
+                                                        Graficas</a>
+                                                    <a class="dropdown-item" href="categoria(gabinetes).html">Gabinetes</a>
+                                                </div>
+                                            </li>
+            
+                                            <li class="nav-item active navitem2navbar">
+                                                <a href="informativo.html" class="nav-link">Informativo</a>
+                                            </li>
+                                            <li class="nav-item active navitem2navbar">
+                                                <a href="cotizacion.html" class="nav-link">Cotizacion</a>
+                                            </li>
+            
+                                        </ul>
+            
+            
+            
+                                    </div>
+                                </nav>
+                            </div>
+            
+                        
+                      
+                         
+
+
+                                
+                           
+                                <div class="container pt-5" >
+                                    <script>
+                                        $(document).ready(function(){
+                                            $("#id_idusuario").attr("readonly",true)
+                                        });
+                                    </script>
+
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            
+                                        </div>
+                                        <div class="col-sm-8">
+                                           
+                                                    <h3>Modificar Usuario {{Mi_idusuario}}</h3>
+                                                  
+                                                   
+                                                    
+                                                        
+                                                    
+                                                
+                                          
+                                            <br>
+                                            <br>
+                                            <br>
+                                            
+
+
+                                            
+                                                <form action="" method="post" enctype="multipart/form-data">
+                                                    {% csrf_token %}
+
+                                                    {{form|crispy}}
+                                                    <br>
+                                                    <br>
+                                                        <input type="submit" class="btn btn-lg btn-success" value="Guardar Cambios">
+                                                </form>
+                                            
+
+                                            
+                                            {% if mensaje %}
+                                                <div class="alert alert-success">
+                                                   <h3 class="p-2">{{mensaje}}!!!</h3>
+                                                    <a href="{% url 'vadmin' %}" class="alert-link">Volver </a>.
+                                                </div>
+                                            
+                                            
+                                            {% endif %}
+                                
+                                
+                                        </div>
+                                
+                                            
+                                      
+                                        <div class="col-sm-2">
+                                        </div>
+                                        </div>
+                                
+                                    </div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                </div>
+                                
+                                
+
+                                
+                                
+                                
+
+
+
+                <div class="container-fluid">
+                        <div class="row" style="border-top: solid #2E92F0; background-color: #f2f2f2;">
+                            <div class="col-sm-4 paddingsobrenosotros">
+                                <div class="text-center">
+                                    <div class="subrayado">
+                                    <h5>Sobre nosotros</h5>
+                                    </div>
+                                    <img src="{%static 'app_software/img/logo.jpg'%}" alt="Logo" height="70px" width="90px" />
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime impedit odit
+                                        dolorem reprehenderit provident doloremque quidem cumque! Veritatis
+                                        pariatur sit</p>
+                                    <button type="button" class="btn btn-outline-info sizecontacticon">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                
+                                    </button>
+                                    <button type="button" class="btn btn-outline-info sizecontacticon">
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                
+                                    </button>
+                                    <button type="button" class="btn btn-outline-info sizecontacticon">
+                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                
+                                    </button>
+                
+                                </div>
+                
+                            </div>
+                
+                            <div class="col-sm-4 paddingsobrenosotros">
+                                <div class="subrayado">
+                                <h5 class="text-center">Servicios/Nosotros </h5>
+                                </div>
+                                <nav style="padding-top: 50px;">
+                                        <ul>
+                                                <li>
+                                                    <a class="services" href="acerca_de_nosotros.html">Acerca de nosotros</a>
+                                                </li>
+                                                <li>
+                                                    <a class="services" href="politicas_de_privacidad.html">Politicas de privacidad</a>
+                                                </li>
+                                                <li>
+                                                    <a class="services" href="despachos.html">Despachos</a>
+                                                </li>
+                                                <li>
+                                                    <a class="services" href="devoluciones.html">Devoluciones</a>
+                                                </li>
+                                            </ul>
+                                </nav>
+                
+                
+                            </div>
+                            <div class="col-sm-4 paddingsobrenosotros" >
+                                <div class="subrayado">
+                                <h5 class="text-center">Metodos de pago</h5>
+                                </div>
+                                <div class="text-center" style="padding-top: 0px; ">
+                                    <button type="button" class="btn btn-outline-info sizecontacticon">
+                                        <a href="#"><i class="fa fa-paypal"></i></a>
+                
+                                    </button>
+                                    <button type="button" class="btn btn-outline-info sizecontacticon">
+                                        <a href="#"><i class="fa fa-cc-mastercard"></i></a>
+                
+                                    </button>
+                                    <button type="button" class="btn btn-outline-info sizecontacticon">
+                                        <a href="#"><i class="fa fa-cc-visa"></i></a>
+                
+                                    </button>
+                                </div>
+                
+                            </div>
+                
+                        </div>
+                    </div>
+                </div>
+            </body>
+</html>
